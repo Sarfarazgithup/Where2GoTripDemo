@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageTableViewCell" rowHeight="170" id="KGk-i7-Jjw" customClass="imageTableViewCell" customModule="Where2Go2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black image2" translatesAutoresizingMaskIntoConstraints="NO" id="PSc-Jh-Sca">
+                        <rect key="frame" x="8" y="8" width="387" height="154"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.91373325189999999" green="0.92874350979999998" blue="0.97647184129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="PSc-Jh-Sca" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="989-Zm-792"/>
+                    <constraint firstAttribute="trailing" secondItem="PSc-Jh-Sca" secondAttribute="trailing" constant="8" id="YEI-tL-vgj"/>
+                    <constraint firstItem="PSc-Jh-Sca" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eHS-in-H2b"/>
+                    <constraint firstAttribute="bottom" secondItem="PSc-Jh-Sca" secondAttribute="bottom" constant="8" id="j1w-6Y-Zt1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myLastImage" destination="PSc-Jh-Sca" id="AtP-2S-BbX"/>
+            </connections>
+            <point key="canvasLocation" x="177.69230769230768" y="32.701421800947863"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="black image2" width="800" height="442"/>
+    </resources>
+</document>
